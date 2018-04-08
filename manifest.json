@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Radiodiodi",
+  "description":
+    "Lukuvuoden loppu lähenee ja MyCoursesin Game Changer OpintopisteLaskuri näyttää ikävältä? Ei hätää, Radiodiodi korjaa kaiken!",
+  "version": "1.0.1",
+  "content_scripts": [
+    {
+      "matches": ["https://mycourses.aalto.fi/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "icons": {
+    "128": "icon_128.png"
+  },
+  "web_accessible_resources": ["vyotista.png", "play.png"],
+  "permissions": ["https://*.radiodiodi.fi/*"]
+}

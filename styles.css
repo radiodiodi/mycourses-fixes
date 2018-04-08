@@ -1,0 +1,14 @@
+.goalicon {
+  border-radius: 32px;
+  width: 64px;
+  background-color: #ef67b3;
+}
+
+.totalscore {
+  background-color: transparent !important;
+  padding: 0 !important;
+}
+
+#radio-motivational {
+  font-size: 14;
+}
