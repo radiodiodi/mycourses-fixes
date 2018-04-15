@@ -12,7 +12,7 @@ let audioElement;
 
 const imgURL = chrome.extension.getURL("vyotista.png");
 const playURL = chrome.extension.getURL("play.png");
-const mp3StreamURL = "https://virta.radiodiodi.fi/stream.mp3";
+const mp3StreamURL = "https://virta.radiodiodi.fi/radiodiodi-mp3";
 
 const newHTML = `<div class="creditinfo col-md-9 col-xs-12">
                 <div class="row">
@@ -214,6 +214,7 @@ function spinPlayIcon() {
 function onPlayClick() {
   if (isBroadcastSeason) {
     playAudioStream();
+    spinPlayIcon();
   } else {
     spinPlayIcon();
   }
